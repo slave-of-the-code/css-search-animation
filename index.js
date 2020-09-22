@@ -29,7 +29,7 @@
 // app.get("/", (req, res) => {
 //   //   console.log("req", req);
 //   //   console.log("res", res);
-//   res.end("helo Express!! ");
+//   res.end("hello Express!! ");
 // });
 
 // app.get("/login", (req, res) => {
@@ -70,17 +70,9 @@ app.use((req, res, next) => {
 // --middleware
 
 // routing --
-app.get("/", (req, res) => {
-  res.end("helo Express!! ");
-});
-
-app.get("/login", (req, res) => {
-  res.end("I am Login");
-});
-
-app.get("*", (req, res) => {
-  res.end("Page was not founded");
-});
+// go to -> routes.js
+app.use("/api", require("./routes-api"));
+app.use(require("./routes"));
 // -- routing
 
 app.listen(3000, () => {
