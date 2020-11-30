@@ -1,5 +1,5 @@
-# css | Search animation
+# CSS | Search animation
 
 #### small search animation
 
-[GitHub Pages]()
+[GitHub Pages](https://slave-of-the-code.github.io/css-search-animation/)
